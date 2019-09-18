@@ -4,7 +4,10 @@ function Presentation() {
   var wrapper = $("<div>").css({
     width: "70%",
     margin: "0 auto",
-    //backgroundImag :"src('512x512bb.jpg')"
+    background:"url('512x512bb.jpg')",
+    backgroundSize:"cover",
+    backgroundRepeat:"no-repeat",
+    backgroundPosition:"center"
     
   })
   body.append(wrapper);
@@ -121,11 +124,11 @@ function Presentation() {
       })
       console.log(suma);
       var prosek = suma / odLocalStorage.length;
-      console.log(prosek);
+      //console.log(prosek);
       var hba1cCalc = 2.59 + prosek;
-      console.log(hba1cCalc)
+      //console.log(hba1cCalc)
       var hba1c = hba1cCalc/1.59;
-      console.log(hba1c);
+     // console.log(hba1c);
       button2.on("click", () => {
         input2.val(hba1c);
       })
@@ -145,7 +148,7 @@ function Presentation() {
 
 
 
-      console.log(times);
+      //console.log(times);
 
 
       var data = {
